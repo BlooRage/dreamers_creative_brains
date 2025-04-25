@@ -1,0 +1,211 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+/* ======= GLOBAL STYLES ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000033;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+p, a {
+  font-family: Poppins, sans-serif;
+}
+
+ h1, h2, h3, h4, h5, span {
+  font-family: 'Merriweather', sans-serif;
+}
+
+/* ======= HEADER STYLES ======= */
+.top-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 1%;
+  border: 5px solid #000033;
+  border-radius: px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.school-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.school-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.school-id {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  color: black;
+}
+
+/* ======= NAVIGATION BAR ======= */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 5%;
+  border: 5px solid #000033;
+  border-radius: 0px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom:120px;
+}
+
+.navbar a {
+  color: #000033;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #000033;
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+/* ======= PORTAL SELECTION ======= */
+.portal-container {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  width: 500px;
+  height: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.portal-container h2 {
+  font-size: 20px;
+  color: #000033;
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+}
+
+.portal-btns {
+  background-color: #000033;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  border:2px solid #fff;
+}
+
+.portal-btns:hover {
+  background-color: #ffffff;
+  color:#000033;
+  border:2px solid #000033;
+}
+
+  /* ======= FOOTER STYLES ======= */
+  .footer {
+    background-color: #000033;
+    text-align: center;
+    padding: 40px 0.25% 0.25%;
+    width: 100%;
+    margin-top: 120px;
+  }
+  
+  .footer-content-box {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 40px;
+  }
+  
+  .footer-content-box h4 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-item i {
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .footer-item a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .header-title {
+    text-align: center;
+    margin: 10px 0px 10px;
+    color: #000;
+  }
+  
+  .page-paragraph {
+    text-align: justify;
+    margin: 10px;
+    padding: 0px 10px 5px;
+    color: #000;
+  }

@@ -1,0 +1,264 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+/* ======= GLOBAL STYLES ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000033;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+p, a {
+  font-family: Poppins, sans-serif;
+}
+
+ h1, h2, h3, h4, h5, span {
+  font-family: 'Merriweather', sans-serif;
+}
+
+/* ======= HEADER STYLES ======= */
+.top-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 1%;
+  border: 5px solid #000033;
+  border-radius: px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.school-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.school-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.school-id {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  color: black;
+}
+
+
+/* ======= NAVIGATION BAR ======= */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 5%;
+  border: 5px solid #000033;
+  border-radius: px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.navbar a {
+  color: #000033;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #000033;
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+  
+/* Contact Box Styling */
+.contact-box {
+    background-color: white;
+    color: #000033;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 125px 100px;
+    width: 55%;
+}
+
+.contact-box h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Left Side - Form */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000033;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #000033;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #444488;
+}
+
+/* Right Side - Contact Details */
+.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    color: #000033;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #000033;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+  /* ======= FOOTER STYLES ======= */
+.footer {
+  background-color: #000033;
+  text-align: center;
+  padding: 40px 0.25% 0.25%;
+  width: 100%;
+}
+
+.footer-content-box {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.footer-content-box h4 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.footer-item i {
+  font-size: 1rem;
+  color: #000;
+}
+
+.footer-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+
+.header-title {
+  text-align: center;
+  margin: 10px 0px 10px;
+  color: #000;
+}
+
+.page-paragraph {
+  text-align: justify;
+  margin: 10px;
+  padding: 0px 10px 5px;
+  color: #000;
+}

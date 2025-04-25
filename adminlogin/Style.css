@@ -1,0 +1,349 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+/* ======= GLOBAL STYLES ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000033;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+p, a, label {
+  font-family: Poppins, sans-serif;
+}
+
+ h1, h2, h3, h4, h5, span {
+  font-family: 'Merriweather', sans-serif;
+}
+
+/* ======= HEADER STYLES ======= */
+.top-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 1%;
+  border: 5px solid #000033;
+  border-radius: 0px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.school-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.school-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.school-id {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  color: black;
+}
+/* ======= NAVIGATION BAR ======= */
+.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 5%;
+  border: 5px solid #000033;
+  border-radius: px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.navbar a {
+  color: #000033;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #000033;
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* enrol btn*/
+.enroll-btn {
+background-color: #000033;
+color: white;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.enroll-btn:hover {
+background-color: #1a1a80;
+transform: scale(1.05);
+}
+
+
+/* enroll btn*/
+.enroll-btn {
+  background-color: #000033;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.enroll-btn:hover {
+  background-color: #1a1a80;
+}
+
+
+
+.admin-login {
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.admin-login:hover {
+  background-color: #fff;
+  color: #000033;
+}
+
+
+
+/* main*/
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  flex-grow: 1; /* para mag adjust yung footer*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align:center;
+}
+
+.login-box,  .register-box, .forgot-box{
+  background-color: #fff;
+  width: 500px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  color: #000000; 
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1em;
+  color: #000033;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.input-group input, select, option {
+  width: 100%;
+  padding: 12px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-btn, .register-btn, .sendReset-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #000033;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover, .register-btn:hover, .sendReset-btn:hover {
+  background-color: #1a1a80;
+}
+
+
+.create-account, .sign-in, .forgot-password {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000033;
+  text-decoration: none;
+}
+
+.create-account:hover, .sign-in:hover, .forgot-password:hover {
+  text-decoration: underline;
+}
+
+
+  /* ======= FOOTER STYLES ======= */
+  .footer {
+    background-color: #000033;
+    text-align: center;
+    padding: 40px 0.25% 0.25%;
+    width: 100%;
+  }
+  
+  .footer-content-box {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 40px;
+  }
+  
+  .footer-content-box h4 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-item i {
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .footer-item a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .header-title {
+    text-align: center;
+    margin: 10px 0px 10px;
+    color: #000;
+  }
+  
+  .page-paragraph {
+    text-align: justify;
+    margin: 10px;
+    padding: 0px 10px 5px;
+    color: #000;
+  }
+
+.error-box, .messageDiv {
+  position: center;
+  background-color: rgba(255, 0, 0, 0.9); /* Red background */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  display: none; /* Initially hidden */
+  z-index: 10;
+}
+
+.input-group {
+  position: relative; /* Allows absolute positioning for the error box */
+}
+
+/* edits */
+@media (max-width: 768px) {
+  .header-left,
+  .header-right {
+    gap: 8px;
+  }
+
+  .school-name {
+    font-size: 1rem;
+  }
+
+  .admin-login {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .login-box, .register-box, .forgot-box {
+    width: 500px;
+    
+    margin: 0 10%;
+  }
+
+  .footer-content-box {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hyperlinks{
+    text-align: center;
+  }
+}

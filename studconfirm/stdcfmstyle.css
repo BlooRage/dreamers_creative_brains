@@ -1,0 +1,293 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+/* ======= GLOBAL STYLES ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000033;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+p, a {
+  font-family: Poppins, sans-serif;
+}
+
+ h1, h2, h3, h4, h5, span {
+  font-family: 'Merriweather', sans-serif;
+}
+
+/* ======= HEADER STYLES ======= */
+.top-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 1%;
+  border: 5px solid #000033;
+  border-radius: 0px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.school-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.school-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.school-id {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  color: black;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.school-id {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  color: black;
+}
+
+  
+
+/* === Main Content Styling === */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh; /* Full screen height */
+    padding: 20px;
+}
+
+/* === Smaller White Box === */
+.main-box {
+  background-color: white;
+  color: #000033;
+  padding: 30px;
+  width: 55%; /* Smaller width */
+  height: auto; /* Let height adjust based on content */
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto; /* Center it */
+}
+
+/* === Student Info and Image Section === */
+.portal-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px 0;
+  gap: 20px;
+  flex-wrap: wrap; /* Responsive wrap */
+}
+
+/* === Left Side: Student Info === */
+.student-info {
+  text-align: left;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 250px;
+  
+}
+
+/* === Add space between the ID, Name, School Year and the next section === */
+.student-info .personal-info {
+  margin-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+/* Make ID Number Red */
+.id-number {
+  color: red;
+  font-weight: bold;
+}
+
+/* === Right Side: Image Box === */
+.image-box {
+  flex: 1;
+  text-align: center;
+  min-width: 250px;
+}
+
+.image-box img {
+  width: auto; /* Smaller image */
+  height: 150px;
+  border-radius: 10px;
+}
+
+.image-box p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* === Button Container === */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* === Button Styling === */
+.portal-btn {
+  background-color: #000033;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* === Hover and Active Effects === */
+.portal-btn:hover {
+  background-color: darkblue;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portal-btn:active {
+  transform: scale(0.95);
+}
+
+.portal-btn::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 150%;
+  height: 150%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg) translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portal-btn:hover::before {
+  opacity: 1;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 5px #000033; }
+  50% { box-shadow: 0 0 20px royalblue; }
+  100% { box-shadow: 0 0 5px #000033; }
+}
+
+.portal-btn:hover {
+  animation: glowing 1.5s infinite;
+}
+
+ 
+  
+ /* ======= FOOTER STYLES ======= */
+ .footer {
+  background-color: #000033;
+  text-align: center;
+  padding: 40px 0.25% 0.25%;
+  width: 100%;
+}
+
+.footer-content-box {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.footer-content-box h4 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.footer-item i {
+  font-size: 1rem;
+  color: #000;
+}
+
+.footer-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+
+.header-title {
+  text-align: center;
+  margin: 10px 0px 10px;
+  color: #000;
+}
+
+.page-paragraph {
+  text-align: justify;
+  margin: 10px;
+  padding: 0px 10px 5px;
+  color: #000;
+}

@@ -1,0 +1,162 @@
+<script>
+  function toggleForms() {
+    let loginBox = document.querySelector('.login-box');
+    let registerBox = document.querySelector('.register-box');
+
+    if (loginBox.style.display === 'none') {
+      loginBox.style.display = 'block';
+      registerBox.style.display = 'none';
+    } else {
+      loginBox.style.display = 'none';
+      registerBox.style.display = 'block';
+    }
+  }
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dreamers Creative Brains Academy</title>
+  <!-- link sa style para sa design -->
+  <link rel="stylesheet" href="Style.css">
+  <!-- Link sa icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script type="module" src="registerFirebase.js"></script>
+  <script src="showScript.js"></script>
+</head>
+<body>
+  <!-- logo header  -->
+  <header class="top-header">
+    <div class="header-left">
+      <img src="dreamers.jpg" alt="School Logo" class="school-logo"/>
+      <span class="school-name">DREAMERS CREATIVE BRAINS ACADEMY</span>
+    </div>
+    <div class="header-right">
+      <span class="school-id">SCHOOL ID:<br>410602</span>
+    </div>
+  </header>
+
+ 
+  <!-- nav buttons -->
+  <nav class="navbar">
+    <a href="../index.html">HOME</a>
+    <a href="#">GALLERY</a>
+    <a href="../portal/portal.html">PORTAL</a>
+    <a href="../contact/contact.html">CONTACT</a>
+    <a href="../enrollnow/enroll.html">ENROLL TODAY!</a>
+  </nav>
+
+
+  <!-- Main Content-->
+  <section class="main-content">
+
+    
+ <!-- Login Box (Initially Visible) -->
+ <div class="login-box" style="width: 500px;">
+  <div class="input-group">
+    <h2>LOGIN</h2><br>
+    
+    <input type="text" id="login-credential" placeholder="ENTER EMAIL OR ID NUMBER" />
+    <span class="error-box" id="login-credential-error"></span><label><b>EMAIL OR ID NUMBER</b></label>
+  </div>
+  <div class="input-group">
+    
+    <input type="password" id="login-password" placeholder="ENTER PASSWORD" />
+    <span class="error-box" id="login-password-error"></span><label><b>PASSWORD</b></label>
+  </div>
+  <button class="login-btn" id= "submitSignIn"onclick="validateLogin()">Sign In</button>
+  <div id="signInMessage" class="messageDiv" style="display:none;"></div><br><br>
+  <a href="#" class="forgot-password" onclick="showForgotPassword()">Forgot Password?</a>
+  <a href="#" class="create-account" onclick="showRegister()">Don't have an account? Create one</a>
+</div>
+
+
+<!-- Register Box (Initially Hidden) -->
+<div class="register-box"  style="display: none;">
+  <div class="input-group">
+    <h2>CREATE ACCOUNT</h2><br>
+    <input name="LastN" id="register-lastname" type="text" placeholder="ENTER LASTNAME" />
+    <span class="error-box" id="register-lastname-error"></span>
+  </div>
+  <div class="input-group">
+    <input name="FirstN" id="register-firstname" type="text" placeholder="ENTER GIVEN NAME" />
+    <span class="error-box" id="register-firstname-error"></span>
+  </div>
+  <div class="input-group">
+    <input name="ID" id="register-id" type="text" placeholder="ENTER ID NUMBER" />
+    <span class="error-box" id="register-id-error"></span>
+  </div>
+  <div class="input-group">
+    <input name="Email" id="register-email" type="text" placeholder="ENTER EMAIL" />
+    <span class="error-box" id="register-email-error"></span>
+  </div>
+  <div class="input-group">
+    <select name="role" id="register-role">
+      <option value="">-- SELECT OPTION --</option>
+      <option value="Registrar">Registrar</option>
+      <option value="Cashier">Cashier</option>
+      <option value="Principal">Principal</option>
+      <option value="Administrator">Administrator</option>
+    </select>
+    <span class="error-box" id="register-role-error"></span>
+  </div>
+  <div class="input-group">
+    <input type="password" id="create-password" placeholder="CREATE PASSWORD" />
+    <span class="error-box" id="create-password-error"></span>
+  </div>
+  <div class="input-group">
+    <input type="password" id="confirm-password" placeholder="CONFIRM PASSWORD" />
+    <span class="error-box" id="confirm-password-error"></span>
+  </div>
+  <button class="register-btn" id="submitRegister" onclick="validateRegister()">Create Account</button>
+  <div id="signUpMessage" class="messageDiv" style="display:none;"></div><br><br>
+  <a href="#" class="sign-in" onclick="showLogin()">Already have an account? Sign in</a>
+</div>
+
+<!-- Forgot Password Box (Initially Hidden) -->
+<div class="forgot-box" style="display: none;" style="width: 500px;">
+  <div class="input-group">
+    <h2>FORGOT PASSWORD</h2><br>
+    <input type="email" id="forgot-password-email" placeholder="Enter Email" />
+  </div>
+  <button class="sendReset-btn" id="submitForgotPassword">Send Reset Email</button>
+  <div id="changePasswordMessage" class="messageDiv" style="display:none;"></div><br><br>
+  <a href="#" class="sign-in" onclick="showLogin()">Remembered your password? Sign in</a>
+</div>
+
+  </section>
+
+
+  <!-- footer -->
+  <!-- footer -->
+  <footer class="footer">
+    <!-- box sa baba-->
+    <div class="footer-content-box">
+      <h4><strong>START YOUR CHILD’S EDUCATION HERE</strong></h4>
+      <div class="footer-contact">
+        <div class="footer-item">
+          <i class="fas fa-envelope"></i>
+          <p>dreamerscreative.rodriguez@gmail.com</p>
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-phone"></i>
+          <p>09479009876</p>
+        </div>
+        <div class="footer-item">
+          <!-- fb logo -->
+          <a href="https://facebook.com/yourpage" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <p>Dreamers Creative Brains Inc.</p>
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>69 Toblam Street, Espiritu, Balite, Rodriguez, Rizal</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* ======= GLOBAL STYLES ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia Pro", serif;
+    background-color: #000033;
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* ======= HEADER STYLES ======= */
+.top-header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border: 5px solid #000033;
+    border-radius: px;
+    box-shadow: 5px 5px 0px #000033;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.school-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.school-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.school-id {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    color: black;
+}
+
+
+/* ======= MAIN CONTENT STYLES ======= */
+.main-content {
+    text-align: center;
+    background: #fff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 80vh;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000033;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.user-info {
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #000033;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.logout-button:hover {
+    background-color: #0c0c71;
+}
+
+
+
+
+
+/* ======= FOOTER STYLES ======= */
+.footer {
+    background-color: #000033;
+    text-align: center;
+    padding: 40px 5%;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .footer-content-box {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+  
+  .footer-content-box h4 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .footer-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .footer-item i {
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .footer-item a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .footer-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .user-id {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }

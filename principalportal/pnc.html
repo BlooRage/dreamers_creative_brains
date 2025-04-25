@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Principal Portal | Dreamers Creative Brains Academy</title>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="principalportal.css">
+  
+  <!-- Link to icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+  <script type="module" src="../accesspage.js"></script> <!-- Updated JS -->
+</head>
+<body>
+  
+<!-- Logo Header -->
+<header class="top-header">
+  <div class="header-left">
+    <img src="dreamers.jpg" alt="School Logo" class="school-logo"/>
+    <span class="school-name">DREAMERS CREATIVE BRAINS ACADEMY</span>
+  </div>
+  <div class="header-right">
+    <span class="school-id">SCHOOL ID:<br>410602</span>
+  </div>
+</header>
+
+
+<main class="admin-main">
+  <h2>ADMIN PORTAL</h2>
+
+  <div class="admin-content">
+    <!-- Left Side: Buttons only -->
+    <div class="admin-buttons">
+      <button>STUDENT LIST</button>
+      <button>BALANCE LIST</button>
+      <button>PAYMENT REGISTER</button>
+      <button>PROOF OF PAYMENTS SUBMISSIONS</button>
+      <button>ADMISSION FORM SUBMISSIONS</button>
+
+    <div class="admin-credentials">
+      <div>Name: <span class="user-name" id="loggedUserLName"></span>, <span class="user-name" id="loggedUserFName"></span></div>
+          <div>ID: <span class="user-id" id="loggedUserID"></div> 
+    </div>
+  </div>
+
+  <!-- Right Side: Table -->
+  <div class="admin-right-side">
+    <div class="admin-table">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Student ID No</th>
+            <th>Grade Level</th>
+            <th>Section</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Santos</td><td>Maria</td><td>L.</td><td>2025001</td><td>Nursery</td><td>Sunshine</td></tr>
+          <tr><td>2</td><td>Reyes</td><td>John</td><td>M.</td><td>2025002</td><td>Kinder</td><td>Rainbow</td></tr>
+          <tr><td>3</td><td>Dela Cruz</td><td>Angela</td><td>T.</td><td>2025003</td><td>Grade 1</td><td>Diamond</td></tr>
+          <tr><td>4</td><td>Garcia</td><td>Miguel</td><td>S.</td><td>2025004</td><td>Grade 2</td><td>Emerald</td></tr>
+          <tr><td>5</td><td>Mendoza</td><td>Camille</td><td>R.</td><td>2025005</td><td>Grade 3</td><td>Topaz</td></tr>
+          <tr><td>6</td><td>Lopez</td><td>Nathaniel</td><td>J.</td><td>2025006</td><td>Grade 4</td><td>Sapphire</td></tr>
+          <tr><td>7</td><td>Aquino</td><td>Isabela</td><td>G.</td><td>2025007</td><td>Grade 5</td><td>Opal</td></tr>
+          <tr><td>8</td><td>Torres</td><td>Daniel</td><td>E.</td><td>2025008</td><td>Grade 6</td><td>Amethyst</td></tr>
+          <tr><td>9</td><td>Cruz</td><td>Lovely</td><td>V.</td><td>2025009</td><td>Nursery</td><td>Sunshine</td></tr>
+          <tr><td>10</td><td>Ramos</td><td>Elijah</td><td>D.</td><td>2025010</td><td>Grade 1</td><td>Diamond</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Move LOGOUT button here under the table -->
+    <div class="logout-container">
+      <button class="logout-button " id="logout">LOGOUT</a>
+    </div>
+  </div>
+</div>
+</main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content-box">
+      <h4>START YOUR CHILD’S EDUCATION HERE</h4>
+      <div class="footer-contact">
+        <div class="footer-item">
+          <i class="fas fa-envelope"></i>
+          <span>dreamerscreative.rodriguez@gmail.com</span>
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-phone"></i>
+          <span>09479009876</span>
+        </div>
+        <div class="footer-item">
+          <a href="https://facebook.com/yourpage" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <span>Dreamers Creative Brains Inc.</span>
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>69 Toblam Street, Espiritu, Balite, Rodriguez, Rizal</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
